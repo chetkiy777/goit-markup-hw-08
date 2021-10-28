@@ -1,0 +1,117 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background: $background-dark-color;
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__block-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $main-white-color;
+  }
+}
+
+.studio-white {
+  color: $main-white-color;
+}
+
+.address {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.7;
+  color: $main-white-color;
+  margin-top: 20px;
+}
+
+.footer__mail {
+  margin-top: 9px;
+  margin-bottom: 9px;
+
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.footer__number {
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.inline {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.welcome__list {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.welcome__item .welcome__link {
+  display: inline-flex;
+  height: 44px;
+  width: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 12px;
+  fill: $main-white-color;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.welcome__link:focus,
+.welcome__link:hover {
+  background-color: $accent-color;
+}
+
+.subscribe--title {
+  padding-bottom: 20px;
+}
+
+.subscribe__input {
+  height: 50px;
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px 0 15px 16px;
+  background-color: $background-dark-color;
+
+  margin-right: 12px;
+  color: $main-white-color;
+}
+
+.button__icon {
+  margin-left: 10px;
+  fill: $main-white-color;
+}

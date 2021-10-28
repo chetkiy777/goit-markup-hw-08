@@ -1,0 +1,54 @@
+.about {
+  padding: 94px 0 47px 0;
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__icon-thumb {
+    display: inline-flex;
+    height: 120px;
+    width: 270px;
+    align-items: center;
+    justify-content: center;
+    background-color: $background-light-color;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $main-text-color;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    letter-spacing: 0.03em;
+    color: $secondary-text-color;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+.about__item {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.7;
+  color: $secondary-text-color;
+  width: calc(100% / 4);
+
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+.antena,
+.clock,
+.diagram,
+.astro {
+  height: 70px;
+  width: 70px;
+}

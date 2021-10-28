@@ -1,0 +1,201 @@
+.backdrop {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  /* height: 581px;
+  width: 528px; */
+  display: flex;
+  flex-direction: column;
+
+  transform: translate(-50%, -50%);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: $main-white-color;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px;
+  &__title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: $main-text-color;
+
+    margin-bottom: 12px;
+  }
+}
+
+.field {
+  position: relative;
+
+  &__label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: $secondary-text-color;
+
+    margin-bottom: 4px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 30px;
+    left: 15px;
+
+    display: inline-block;
+
+    background-size: contain;
+    fill: $main-text-color;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.field__input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  margin-bottom: 10px;
+  padding-left: 38px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.field__comment {
+    height: 120px;
+    padding: 12px 16px;
+
+    resize: none;
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:focus {
+    outline: 1px solid $accent-color;
+    border-color: $accent-color;
+  }
+
+  &:focus ~ .field__icon {
+    fill: $accent-color;
+  }
+}
+
+.accept-label {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 25px;
+
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $secondary-text-color;
+  &__icon {
+    display: inline-flex;
+    align-items: center;
+    height: 15px;
+    width: 15px;
+    border: 1px solid $main-text-color;
+    border-radius: 4px;
+
+    margin-right: 7px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &--doc {
+    color: $accent-color;
+    text-decoration: underline;
+    margin-left: 3px;
+  }
+}
+
+.accept-label__checkbox {
+  -webkit-appearance: none;
+}
+
+.accept-label__checkbox:checked + .accept-label__icon {
+  border: none;
+  background-image: url('../images/check-icon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: $accent-color;
+}
+
+.button {
+  height: 50px;
+  width: 200px;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: $main-white-color;
+
+  cursor: pointer;
+}
+
+.button-send {
+  margin-top: 30px;
+  transform: translateX(60%);
+}
+
+.button-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  height: 30px;
+  width: 30px;
+
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &__icon {
+    display: inline-block;
+  }
+
+  &:hover &__icon,
+  &:focus &__icon {
+    fill: $accent-color;
+  }
+}

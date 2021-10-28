@@ -1,0 +1,22 @@
+{
+  "name": "hw8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chetkiy777/goit-markup-hw-08.git"
+  },
+  "author": "Igor Gladkiy <egunka1988@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chetkiy777/goit-markup-hw-08/issues"
+  },
+  "homepage": "https://github.com/chetkiy777/goit-markup-hw-08",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
