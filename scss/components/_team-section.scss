@@ -1,12 +1,10 @@
 .team {
-  background: $background-light-color;
-  padding: 94px 0 94px 0;
+  background-color: $background-light-color;
+  // padding: 94px 0 94px 0;
 
   &__list {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 50px;
+    flex-direction: column;
   }
 
   &__title {
@@ -26,7 +24,7 @@
 }
 
 .team__item {
-  background: $main-white-color;
+  background-color: $main-white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -34,6 +32,10 @@
 
   &--thumb {
     padding-top: 30px;
+  }
+
+  &:not(:first-child) {
+    margin-top: 30px;
   }
 }
 

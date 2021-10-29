@@ -1,8 +1,9 @@
 .footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 
   padding-top: 60px;
   padding-bottom: 60px;
@@ -21,6 +22,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $main-white-color;
+
+    &--mt {
+      margin-top: 60px;
+    }
   }
 }
 
@@ -67,8 +72,9 @@
 
 .inline {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  flex-direction: column;
+
+  align-items: center;
 }
 
 .welcome__list {
@@ -94,24 +100,31 @@
   background-color: $accent-color;
 }
 
+.footer__subscribe {
+  display: block;
+  width: 100%;
+}
+
 .subscribe--title {
   padding-bottom: 20px;
 }
 
 .subscribe__input {
   height: 50px;
-  width: 358px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding: 15px 0 15px 16px;
   background-color: $background-dark-color;
 
-  margin-right: 12px;
   color: $main-white-color;
+
+  &--mb {
+    margin-bottom: 20px;
+  }
 }
 
 .button__icon {
-  margin-left: 10px;
   fill: $main-white-color;
 }

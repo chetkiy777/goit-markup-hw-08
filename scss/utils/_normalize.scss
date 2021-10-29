@@ -44,7 +44,6 @@ body {
   font-family: system-ui, -apple-system,
     /* Firefox supports this but not yet `system-ui` */ 'Segoe UI', 'Roboto', Helvetica, Arial,
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Raleway';
-  box-sizing: border-box;
   color: $main-text-color;
 }
 
@@ -72,8 +71,8 @@ p {
 h1 {
   font-family: 'Roboto';
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   text-align: center;
   text-transform: uppercase;
   color: $main-white-color;
@@ -314,12 +313,14 @@ summary {
   display: list-item;
 }
 
+// added by Chetkiy 28.10.2021
+
 .section {
-  padding: 94px 0 94px 0;
+  padding: 60px 0 60px 0;
 }
 
 .container {
-  width: 1200px;
+  width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
