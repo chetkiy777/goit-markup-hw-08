@@ -1,15 +1,13 @@
 .filters__list {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 .filters__btn {
   cursor: pointer;
   margin-right: 8px;
   border: none;
-  outline: none;
   background-color: $background-light-color;
   border-radius: 4px;
 

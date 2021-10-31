@@ -1,9 +1,15 @@
 .about {
-  padding: 94px 0 47px 0;
+  // padding: 94px 0 47px 0;
 
   &__list {
     display: flex;
     flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 
   &__icon-thumb {
@@ -21,8 +27,13 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: $main-text-color;
+
     margin-top: 30px;
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
 
   &__text {
@@ -40,10 +51,7 @@
   font-size: 14px;
   line-height: 1.7;
   color: $secondary-text-color;
-
-  &:not(:first-child) {
-    margin-top: 30px;
-  }
+  margin-top: 30px;
 }
 
 .antena,

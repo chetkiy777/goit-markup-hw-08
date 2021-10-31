@@ -11,43 +11,78 @@
 </head>
 <body>
 
+    <div class="menu is-menu-hidden" data-menu>
+        <ul class="menu__list">
+            <li class="menu__item"><a href="/index.html">Студия</a></li>
+            <li class="menu__item"><a href="/portfolio.html">Портфолио</a></li>
+            <li class="menu__item"><a href="/portfolio.html">Контакты</a></li>
+        </ul>
+    
+        <div class="menu__contacts">
+            <a href="tel:+380961111111" class="menu__number">+38 096 111 11 11</a>
+            <a href="email:info@devstudio.com" class="menu__mail menu__mail--mt menu__mail--mb">info@devstudio.com</a>
+        </div>
+    
+        <ul class="links-list">
+            <li class="links-list__item"><a href="" class="menu__link">Instagram</a></li>
+            <li class="links-list__item"><a href="" class="menu__link">Twitter</a></li>
+            <li class="links-list__item"><a href="" class="menu__link">Facebook</a></li>
+            <li class="links-list__item"><a href="" class="menu__link">LinkedIn</a></li>
+        </ul>
+    
+        <button class="button-close" data-menu-close>
+            <svg class="button-close__icon" height="11" width="11">
+                <use href="./images/icon-close.svg#close-icon"></use>
+            </svg>
+        </button>
+    </div>
+    
+    
+    
+    <!-- Header - block -->
+    
     <header class="header">
-        <div class="container border">
+        <div class="container">
     
             <a href="./index.html" class="logo"><span class="logo__web">Web</span><span
                     class="logo__studio">Studio</span></a>
     
-            <nav class="header-nav">
-                <ul class="header-nav__list">
-                    <li class="header-nav__item">
-                        <a class="header-nav__link" href="./index.html">Студия</a>
-                    </li>
-                    <li class="header-nav__item">
-                        <a class="header-nav__link" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="header-nav__item">
-                        <a class="header-nav__link active" href="./contacts.html">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
+            <button type="button" class="menu-button" data-menu-open></button>
     
-            <div class="header-contacts">
+            <div class="inline-menu">
+                <nav class="header-nav">
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item">
+                            <a class="header-nav__link active" href="./index.html">Студия</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a class="header-nav__link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a class="header-nav__link" href="./contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
     
-                <a href="mailto:info@devstudio.com" class="header-contacts__mail">
-                    <svg height="12" width="16" class="header-contacts__icon">
-                        <use href="./images/icons.svg#mail"></use>
-                    </svg>
-                    info@devstudio.com
-                </a>
+                <div class="header-contacts">
     
-                <a href="tel:+380961111111" class="header-contacts__number">
-                    <svg height="16" width="10" class="header-contacts__icon">
-                        <use href="./images/icons.svg#mobile"></use>
-                    </svg>
-                    +38 096 111 11 11
-                </a>
+                    <a href="mailto:info@devstudio.com" class="header-contacts__mail">
+                        <svg height="8" width="11" class="header-contacts__icon">
+                            <use href="./images/icons.svg#mail"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
     
+                    <a href="tel:+380961111111" class="header-contacts__number">
+                        <svg height="11" width="8" class="header-contacts__icon">
+                            <use href="./images/icons.svg#mobile"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+    
+                </div>
             </div>
+    
         </div>
     </header>
     
@@ -66,7 +101,7 @@
             </div>
     
             <div class="footer__links">
-                <p class="footer__block-title">Присоединяйтесь</p>
+                <p class="footer__block-title footer__block-title--mt">Присоединяйтесь</p>
                 <ul class="welcome__list">
                     <li class="welcome__item">
                         <a href="" class="welcome__link">
@@ -98,18 +133,21 @@
                     </li>
                 </ul>
             </div>
+    
             <div class="footer-subscribe">
-                <p class="footer__block-title subscribe--title">Подпишитесь на рассылку</p>
-                <form name="subscribe__form">
-                    <input class="subscribe__input" type="email" placeholder="E-mail">
-                    <button class="button" type="submit">Подписаться
-                        <svg class="button__icon" height="24" width="24">
-                            <use href="./images/icons.svg#telegram-btn-icon"></use>
-                        </svg>
-                    </button>
-                </form>
+                <div class="container">
+                    <p class="footer__block-title footer__block-title--mt subscribe--title ">Подпишитесь на рассылку</p>
+                    <form name="subscribe__form">
+                        <input class="subscribe__input subscribe__input--mb" type="email" placeholder="E-mail">
+                        <button class="button" type="submit">Подписаться
+                            <svg class="button__icon" height="24" width="24">
+                                <use href="./images/icons.svg#telegram-btn-icon"></use>
+                            </svg>
+                        </button>
+                    </form>
+    
+                </div>
             </div>
-        </div>
     
     </footer>
 

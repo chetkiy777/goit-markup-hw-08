@@ -45,6 +45,7 @@ body {
     /* Firefox supports this but not yet `system-ui` */ 'Segoe UI', 'Roboto', Helvetica, Arial,
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Raleway';
   color: $main-text-color;
+  box-sizing: inherit;
 }
 
 /* Added by Chetkiy */
@@ -85,6 +86,11 @@ h2 {
   line-height: 1.17;
   text-align: center;
   color: $main-text-color;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 /*
@@ -311,18 +317,4 @@ Add the correct display in Chrome and Safari.
 
 summary {
   display: list-item;
-}
-
-// added by Chetkiy 28.10.2021
-
-.section {
-  padding: 60px 0 60px 0;
-}
-
-.container {
-  width: 480px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
