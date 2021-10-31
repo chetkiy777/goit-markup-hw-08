@@ -1,6 +1,10 @@
 .projects {
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    margin-left: -30px;
+  }
 
   &__thumb {
     position: relative;
@@ -46,6 +50,11 @@
 .projects__item {
   margin-top: 30px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
 
   & .item-title {
     text-transform: none;

@@ -32,6 +32,10 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 3 - 30px);
+  }
 }
 
 .client__link:hover,
