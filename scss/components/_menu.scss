@@ -38,10 +38,7 @@
 .menu__contacts {
   display: flex;
   flex-direction: column;
-
-  &--mt {
-    margin-top: 302px;
-  }
+  margin-top: auto;
 }
 
 .menu__number {

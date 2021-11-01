@@ -846,13 +846,19 @@ summary {
   font-size: 14px;
   line-height: 1.7;
   color: #757575;
-  margin-top: 30px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .about__item:not(:first-child) {
+    margin-top: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .about__item {
     width: calc(100% / 2 - 30px);
     margin-left: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -1007,7 +1013,7 @@ summary {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .team__item {
     width: calc(100% / 4 - 30px);
     margin-left: 30px;
@@ -1162,6 +1168,12 @@ summary {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) and (max-width: 787px) {
+  .filters__btn--mt {
+    margin-top: 15px;
+  }
 }
 
 .filters__btn:focus, .filters__btn:hover {
@@ -1336,8 +1348,14 @@ summary {
   margin-top: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__block-title--mt {
+    margin-top: 30px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
-  .footer__block-title {
+  .footer__block-title--mt {
     margin-top: 0;
   }
 }
@@ -1439,6 +1457,12 @@ summary {
   display: flex;
   gap: 10px;
   margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .welcome__list {
+    margin-bottom: 70px;
+  }
 }
 
 .welcome__item .welcome__link {
@@ -1545,10 +1569,7 @@ summary {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.menu__contacts--mt {
-  margin-top: 302px;
+  margin-top: auto;
 }
 
 .menu__number {
