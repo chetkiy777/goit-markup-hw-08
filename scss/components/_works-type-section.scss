@@ -1,8 +1,9 @@
 .works-type {
   padding: 47px 0 94px 0;
+
   &__list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     margin-top: 50px;
   }
@@ -33,5 +34,9 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $main-white-color;
+  }
+
+  @media screen and (max-width: 1199px) {
+    display: none;
   }
 }

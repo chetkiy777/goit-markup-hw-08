@@ -2,7 +2,7 @@
   &__list {
     display: flex;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
       flex-direction: column;
     }
 
@@ -22,9 +22,6 @@
 
     align-items: center;
     justify-content: center;
-
-    @media screen and (min-width: 768px) {
-    }
   }
 
   &__title {
@@ -64,6 +61,10 @@
   @media screen and (min-width: 768px) {
     width: calc(100% / 2 - 30px);
     margin-left: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 4 - 30px);
   }
 }
 

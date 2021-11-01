@@ -4,6 +4,10 @@
 
   margin-top: -30px;
   margin-left: -30px;
+
+  @media screen and (min-width: 1200px) {
+    flex-flow: row nowrap;
+  }
 }
 
 .client__title {
@@ -35,6 +39,23 @@
 
   @media screen and (min-width: 768px) {
     width: calc(100% / 3 - 30px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+}
+
+.client__logo {
+  height: 92px;
+  width: 210px;
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }
 
