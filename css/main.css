@@ -68,28 +68,10 @@ p {
   margin: 0;
 }
 
-h1 {
-  font-family: 'Roboto';
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.61;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-h2 {
-  font-family: 'Roboto';
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: #212121;
-}
-
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 /*
@@ -539,18 +521,32 @@ summary {
 .logo__web {
   font-family: 'Raleway';
   font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 1.2;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo__web {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo__studio {
   font-family: 'Raleway';
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo__studio {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .active {
@@ -654,7 +650,6 @@ summary {
 
 .header-contacts {
   padding-top: 21px;
-  padding-bottom: 21px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -734,27 +729,39 @@ summary {
 }
 
 .heroes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 400px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 118px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/img-bg.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-bg.jpg");
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 480px) {
+  .heroes {
+    max-width: 480px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/heroes480@1x-min.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/heroes480@1x-min.jpg");
+  }
+}
+
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .heroes {
+    background-image: url("../../images/heroes480@2x-min.jpg");
+  }
 }
 
 @media screen and (min-width: 768px) {
   .heroes {
     max-width: 768px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/heroes768@1x-min.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/heroes768@1x-min.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .heroes {
+    background-image: url("../../images/heroes768@2x-min.jpg");
   }
 }
 
@@ -763,15 +770,49 @@ summary {
     max-width: 1600px;
     height: 600px;
     padding-top: 200px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/heroes1200@1x-min.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/heroes1200@1x-min.jpg");
   }
 }
 
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .heroes {
+    background-image: url("../../images/heroes1200@2x-min.jpg");
+  }
+}
+
+.thumb {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
 .button-get {
+  display: inline-block;
   margin-top: 30px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.heroes__title {
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .heroes__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .about__list {
@@ -974,14 +1015,17 @@ summary {
 }
 
 .team__title {
+  font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   color: #212121;
   margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .team__text {
+  font-family: 'Roboto';
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -1003,6 +1047,9 @@ summary {
           align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.team__item:not(:first-child) {
   margin-top: 30px;
 }
 
@@ -1067,10 +1114,6 @@ summary {
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
   }
-}
-
-.client__title {
-  margin-bottom: 30px;
 }
 
 .client__item {
@@ -1495,6 +1538,12 @@ summary {
   padding-bottom: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .subscribe--title {
+    text-align: left;
+  }
+}
+
 .subscribe__input {
   height: 50px;
   width: 100%;
@@ -1549,7 +1598,7 @@ summary {
   pointer-events: none;
 }
 
-.menu__item {
+.menu__item--link {
   font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
@@ -1646,5 +1695,23 @@ summary {
 
 .section {
   padding: 60px 0 60px 0;
+}
+
+.section-title {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+  color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 /*# sourceMappingURL=main.css.map */

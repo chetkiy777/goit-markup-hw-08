@@ -64,9 +64,9 @@
 
         <div class="menu is-menu-hidden" data-menu>
             <ul class="menu__list">
-                <li class="menu__item"><a href="/index.html">Студия</a></li>
-                <li class="menu__item"><a href="/portfolio.html">Портфолио</a></li>
-                <li class="menu__item"><a href="/portfolio.html">Контакты</a></li>
+                <li class="menu__item"><a class="menu__item--link" href="/index.html">Студия</a></li>
+                <li class="menu__item"><a class="menu__item--link" href="/portfolio.html">Портфолио</a></li>
+                <li class="menu__item"><a class="menu__item--link" href="/portfolio.html">Контакты</a></li>
             </ul>
 
             <div class="menu__contacts">
@@ -145,8 +145,10 @@
             <!-- heroes - section -->
 
             <section class="heroes">
-                <h1>Эффективные решения <br/> для вашего бизнеса</h1>
-                <button type="button" class="button button-get" data-modal-open>Заказать услугу</button>
+                <div class="thumb">
+                    <h1 class="heroes__title">Эффективные решения <br /> для вашего бизнеса</h1>
+                    <button type="button" class="button button-get" data-modal-open>Заказать услугу</button>
+                </div>
             </section>
 
             <!-- about - section -->
@@ -212,7 +214,7 @@
             <section class="works-type section">
 
                 <div class="container">
-                    <h2>Чем мы занимаемся</h2>
+                    <h2 class="section-title">Чем мы занимаемся</h2>
                     <ul class="works-type__list">
                         <li class="works-type__item">
                             <div class="img-thumb">
@@ -251,7 +253,7 @@
             <section class="team section">
                 <div class="container">
 
-                    <h2>Наша команда</h2>
+                    <h2 class="section-title">Наша команда</h2>
 
                     <ul class="team__list">
                         <li class="team__item">
@@ -425,7 +427,7 @@
             <section class="section">
                 <div class="client container">
 
-                    <h2 class="client__title">Постоянные клиенты</h2>
+                    <h2 class="section-title">Постоянные клиенты</h2>
 
                     <ul class="client__list">
                         <li class="client__item">
