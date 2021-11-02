@@ -574,14 +574,14 @@ summary {
 }
 
 .menu-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
   margin-left: auto;
   height: 40px;
   width: 40px;
   background-color: #ffffff;
   border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
   background-image: url("../../images/svg/menu_24px.svg");
   background-size: cover;
 }
