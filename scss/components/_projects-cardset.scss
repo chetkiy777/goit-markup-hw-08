@@ -13,6 +13,15 @@
   &__thumb {
     position: relative;
     overflow: hidden;
+    max-width: 450px;
+
+    @media screen and (min-width: 768px) {
+      max-width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 370px;
+    }
   }
 
   &__drop-item {
@@ -22,12 +31,19 @@
     height: 100%;
     width: 100%;
 
-    transform: translateY(100%);
-    padding: 63px 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
+    transform: translateY(100%);
+    padding-left: 24px;
+    padding-right: 24px;
+
+    font-family: 'Roboto';
     font-size: 18px;
-    line-height: 1.55;
+    line-height: 1.5;
     letter-spacing: 0.03em;
+    text-align: left;
     color: $main-white-color;
 
     background-color: rgba(33, 150, 243, 0.9);

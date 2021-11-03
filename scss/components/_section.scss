@@ -1,5 +1,9 @@
 .section {
   padding: 60px 0 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0 94px 0;
+  }
 }
 
 .section-title {
@@ -16,5 +20,6 @@
   @media screen and (min-width: 1200px) {
     font-size: 36px;
     line-height: 1.17;
+    margin-bottom: 50px;
   }
 }

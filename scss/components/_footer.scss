@@ -23,6 +23,10 @@
     text-transform: uppercase;
     color: $main-white-color;
 
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
+
     &--mt {
       margin-top: 60px;
 
@@ -44,6 +48,10 @@
 
   .subscribe__button {
     display: inline-block;
+  }
+
+  .footer__info {
+    text-align: left;
   }
 }
 
