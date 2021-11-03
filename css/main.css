@@ -489,6 +489,7 @@ summary {
   padding: 0;
   border-radius: 50%;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .button-close__icon {
