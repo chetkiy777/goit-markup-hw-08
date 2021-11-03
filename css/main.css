@@ -580,11 +580,10 @@ summary {
   height: 40px;
   width: 40px;
   background-color: #ffffff;
-  border: none;
   cursor: pointer;
   margin-top: 10px;
   margin-bottom: 10px;
-  background-image: url("../../images/svg/menu_24px.svg");
+  background-image: url("./../images/menu-btn.svg");
   background-size: cover;
 }
 
