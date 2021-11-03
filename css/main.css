@@ -1263,7 +1263,13 @@ summary {
 .projects__thumb {
   position: relative;
   overflow: hidden;
-  max-width: 450px;
+  display: block;
+}
+
+@media screen and (min-width: 480px) {
+  .projects__thumb {
+    max-width: 450px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1373,6 +1379,8 @@ summary {
 
 .projects__item .projects__img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .projects__item:hover {
